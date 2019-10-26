@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>heelo</title>
+	<title>handi_geek</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
@@ -167,8 +167,8 @@
 
               <div class="row col-md-5 text-light text-center">
                 <h1 class="codeh">code</h1>
-                <textarea id="test"  v-model="text" class=" banana-cake">
-            
+                <textarea id="test"   class=" banana-cake">
+                   {{text}}
               </textarea>
               </div>
    	  	 	 
@@ -301,7 +301,6 @@ Vue.component('speech-to-text', {
         
         let text = Array.from(event.results).map(result => result[0]).map(result => result.transcript).join('')
         if (text=='document') {
-        	 //text='<!DOCTYPE html>\n<head>\n<metacharset="utf-8">\n\t<title></title>\n</head>\n<body>\n\n</body>\n</html>'
         	 text='<!DOCTYPE html>'
         	 text+="\r";
         	 text+="<head>"
@@ -319,8 +318,6 @@ Vue.component('speech-to-text', {
 
 
         if (text=='navigation') {
-        	 //text='<!DOCTYPE html>\n<head>\n<metacharset="utf-8">\n\t<title></title>\n</head>\n<body>\n\n</body>\n</html>'
-        	 //document.getElementById('test').value = " " ;
         	 text='<!DOCTYPE html>'
         	 text+="\r"
         	 text+="<head>"
@@ -334,8 +331,6 @@ Vue.component('speech-to-text', {
         	 text+="\r"
              text+='<style>........<style>'
              text+="\r"
-             text+='<style>........<style>'
-             text+="\r"
         	 text+="</head>"
         	 text+="\r"
         	 text+="<body>"
@@ -345,46 +340,26 @@ Vue.component('speech-to-text', {
         	 text+='<nav class="navbar navbar-expand-lg navbar-light bg-light">'
         	 text+="......"
            text+="\r"
-           text+="......" 
-           text+="\r"
              text+="</nav>"
              text+="\r"
              text+="//bootstrap's and other necessary js scripts"
-             text+="\r"
-             text+='<script>........<script>'
-             text+="\r"
-             text+='<script>........<script>'
              text+="\r"
              text+="</body>"
              text+="\r"
              text+="</html>"
              text+="\r"
 
-        	//window.open("try.html","_blank")
-        	/*window.setTimeout(function() {
-        		window.location.href="file:///E:/diversityinclution/try.html"
-            $('.resultdiv').html(text3)
-        	},11000)*/
-
-          var text3 ='<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#222d32 !important;color:aliceblue;margin-left:-10px"><div class="row"><div class="col-md-6 fs-20">Navbar</div><div class="col-md-6"><div class="row display_flex_end"><a href="#" class="btn  text-light m-r-10">login</a><a href="#" class="btn text-light m-r-10 ">signup</a></div></div></div></nav>'
+          var text3 ='<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#222d32 !important;color:aliceblue;margin-left:-10px"><div class="row"><div class="col-md-6 fs-20">Navbar</div><div class="col-md-6"></div></div></nav>'
 
      window.setTimeout(function() {
             $('.resultdiv').html(text3)
           },5000)
-
-window.setTimeout(function() {
-            document.location.reload();
-          },15000)
-
-
-        	
-        
-        	
         }
       
 
-         //picture
-         if(text=='picture'){
+         //image
+         if(text=='image'){
+          $('#test').val('')
             text='<!DOCTYPE html>'
            text+="\r"
            text+="<head>"
@@ -395,10 +370,6 @@ window.setTimeout(function() {
            text+="<meta charset='utf-8'>"
            text+="\r"
            text+="//bootstrap's and other necessary css links"
-           text+="\r"
-             text+='<style>........<style>'
-             text+="\r"
-             text+='<style>........<style>'
              text+="\r"
            text+="</head>"
            text+="\r"
@@ -410,52 +381,27 @@ window.setTimeout(function() {
            text+="\r"
              text+='......'
              text+="\r"
-             text+='......'
-             text+="\r"
-
              text+="</nav>"
              text+="\r"
-             text+='<div class="picture">'
-             text+="\r"
-             text+=".........."
-             text+="\r"
-             text+="</div>"
+             text+='<img src="image.jpeg">'
              text+="\r"
            text+="//bootstrap's and other necessary js scripts"
-             text+="\r"
-             text+='<script>........<script>'
-             text+="\r"
-             text+='<script>........<script>'
              text+="\r"
              text+="</body>"
              text+="\r"
              text+="</html>"
              text+="\r"
-          //window.open("try.html","_blank")
-        /*  window.setTimeout(function() {
-            window.location.href="file:///E:/diversityinclution/try2.html"
-          },11000)  */
-
-          var text4 ='<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#222d32 !important;color:aliceblue;margin-left:-10px"><div class="row"><div class="col-md-6 fs-20">Navbar</div><div class="col-md-6"><div class="row display_flex_end"><a href="#" class="btn  text-light m-r-10">login</a><a href="#" class="btn text-light m-r-10 ">signup</a></div></div></div></nav>'
-          var text5='<table class="table"><thead><tr><th>id</th><th>name</th><th>job</th></tr></thead><tbody><tr><td>1</td><td>ahmed  </td><td>web dev</td></tr><tr><td>2</td><td>ali</td><td>grafic designer</td></tr></tbody></table>'
+             $('#test').val(text)
        
-          var text6='<div style="position:relative"><div class="display_flex_center" style="position:absolute;top:45%;left:25%;"><h4 style="font-size:35px;font-weight:bold;position:relative;z-index:99">welcome to our website</h4></div><img src="images/simg.jpg" style="width:100%; height:300px; opacity:.6; margin-left:-5px" ></div>'
+          var text6='<img src="images/simg.jpg" style="width:100%; height:300px; opacity:.6; margin-left:-5px" >'
           window.setTimeout(function() {
-            $('.resultdiv').html(text4)
-            //$('.resultdiv').append(text5)
-            $('.resultdiv').append(text6)
+            $('.resultdiv').html(text6)
           },5000)
-
-      window.setTimeout(function() {
-            document.location.reload();
-          },15000)
-           
-            
          }
 
 
-         if(text == 'Foundation'){
-
+         if(text == 'heading 1'){
+            $('#test').val()
           text='<!DOCTYPE html>'
            text+="\r"
            text+="<head>"
@@ -467,48 +413,74 @@ window.setTimeout(function() {
            text+="\r"
            text+="//bootstrap's and other necessary css links"
            text+="\r"
-             text+='<style>........<style>'
-             text+="\r"
-             text+='<style>........<style>'
-             text+="\r"
            text+="</head>"
            text+="\r"
            text+="<body>"
            text+="\r"
            text+="//bootstrap navabar"
            text+="\r"
-           text+='<nav class="navbar navbar-light bg-light">'
+           text+='<h1>'
            text+="\r"
-             text+='.........'
+             text+='This is a heading'
              text+="\r"
-             text+="</nav>"
-             text+="\r"
-             text+='<div class="picture">'
-             text+="\r"
-             text+=".........."
-             text+="\r"
-             text+="</div>"
-             text+="\r"
-             text+='<div class="Foundation">'
-             text+="\r"
-             text+=".........."
-             text+="\r"
-             text+="</div>"
-             text+="\r"
-           text+="//bootstrap's and other necessary js scripts"
-             text+="\r"
-             text+='<script>........<script>'
-             text+="\r"
-             text+='<script>........<script>'
+             text+="</h1>"
              text+="\r"
              text+="</body>"
              text+="\r"
              text+="</html>"
              text+="\r"
+             $('#test').val(text)
 
-            var text5 ='<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#222d32 !important;color:aliceblue;margin-left:-10px"><div class="row"><div class="col-md-6 fs-20">Navbar</div><div class="col-md-6"><div class="row display_flex_end"><a href="#" class="btn  text-light m-r-10">login</a><a href="#" class="btn text-light m-r-10 ">signup</a></div></div></div></nav>'
-          var text6='<div style="position:relative"><div class="display_flex_center" style="position:absolute;top:45%;left:25%;"><h4 style="font-size:35px;font-weight:bold;position:relative;z-index:99">welcome to our website</h4></div><img src="images/simg.jpg" style="width:100%; height:300px; opacity:.6; margin-left:-5px" ></div>'
-            var text7 = "<div class='col-md-12'><div class='row'><h2>founder</h2></div><div class='row p-r-50'><div class='col-md-6 display_flex_end'><img src='images/simg.jpg' width='200' height='200' style='border-radius:50%;'></div><div class='col-md-6'><div class='row'><h3>Mr examle</h3></div><div class='row'><p>exampleexempleexemplexempleexample</p></div></div></div></div>"
+            var text7 = "<h1>This is a heading</h1>"
+
+             window.setTimeout(function() {
+            $('.resultdiv').html(text7)
+          },5000)
+         }
+
+         if(text == 'Group' || text == 'group'){
+            $('#test').val('')
+          text='<!DOCTYPE html>'
+           text+="\r"
+           text+="<head>"
+           text+="<title>"
+           text+="handi_geek"
+           text+="</title>"
+           text+="\r"
+           text+="<meta charset='utf-8'>"
+           text+="\r"
+           text+="//bootstrap's and other necessary css links"
+           text+="\r"
+           text+='<style>........<style>'
+           text+="\r"
+           text+="</head>"
+           text+="\r"
+           text+="<body>"
+           text+="\r"
+           text+="//bootstrap navabar"
+           text+="\r"
+           text+='<nav class="navbar  navbar-light bg-light">'
+           text+="\r"
+             text+='......'
+             text+="\r"
+             text+="</nav>"
+             text+="\r"
+             text+='<img src="image.jpeg">'
+             text+="\r"
+            text+='<h1>'
+            text+="\r"
+             text+='This is a heading'
+             text+="\r"
+             text+="</h1>"
+             text+="\r"
+             text+="</body>"
+             text+="\r"
+             text+="</html>"
+             text+="\r"
+           $('#test').val(text)
+            var text5 ='<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#222d32 !important;color:aliceblue;margin-left:-10px"><div class="row"><div class="col-md-6 fs-20">Navbar</div><div class="col-md-6"></div></div></nav>'
+          var text6='<img src="images/simg.jpg" style="width:100%; height:300px; opacity:.6; margin-left:-5px" >'
+            var text7 = "<h1>This is a heading</h1>"
 
              window.setTimeout(function() {
             $('.resultdiv').html(text5)
@@ -516,6 +488,13 @@ window.setTimeout(function() {
             $('.resultdiv').append(text7)
           },5000)
          }
+
+
+
+    /*  window.setTimeout(function() {
+            document.location.reload();
+          },15000)*/
+           
         
      
         

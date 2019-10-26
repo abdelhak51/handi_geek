@@ -1,0 +1,383 @@
+/* global settings */
+      
+      body{
+      	margin: 0;
+        padding: 0;
+      }
+
+      .h54{
+        height:54px !important;
+      }
+
+      @font-face{
+        font-family: "josefin";
+       src:url("../fonts/josefin/JosefinSans-Regular.ttf");
+      }
+
+      *{
+        font-family: "josefin" !important;
+      }
+
+      .zindex99{z-index:99;}
+      .fwbold{font-weight:bold;}
+
+      .loading-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+       background-color: #fff;
+       z-index: 999999;
+      }
+
+
+     .overlay{
+   	position: absolute;
+   	width: 100%;
+   	height: 100%;
+   	top: 0;
+   	left:0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1;
+   }
+   .overlaywhite{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+   background-color: #fff;
+   opacity: 0.6;
+   z-index: 1;
+  }
+
+   input[type="submit"]{
+     cursor: pointer;
+   }
+
+
+
+/*end global settings */
+
+ /* stylink the welcome page */
+ .authlinks .btn-lg{
+  padding: 1.25rem 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  
+ }
+
+ .homelink{
+   width:300px;
+   font-size:2rem;
+   
+ }
+ /**/
+
+
+/* stylingthe login page */
+
+   .maincontent{
+   	 position: relative;
+   	 overflow: hidden;
+   	 /*width: 1366px;*/
+   	 height: 657px;
+   	 background-image: url('../images/photo10.jpg');
+   	 background-size: 100% 100%;
+   	 background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .formulaire{
+   	position: absolute;
+   	/*top: 10%;
+   	left: 35%;*/
+   /*	width: 450px;*/
+    background-color:/* #cccccc91 */ #4c4a4adb;
+    opacity: 1;
+    z-index: 2;
+    border-radius: 5px;
+    padding-top: 50px;
+   }
+
+
+   /*.student_icon{
+   	position: absolute;
+   	left: 42%;
+   }*/
+
+   /*.authentification_header{
+   	position: absolute;
+    margin-top: 85px;
+   margin-left: 80px;
+   }*/
+
+    .form-group{
+      margin-left: 20px;
+    }
+
+   .form-group > *{
+    display: block;
+   }
+
+   .form-group label{
+      font-size: 20px;
+      margin-bottom: 10px;
+   }
+
+   .form-group input{
+    width: 95%;
+    padding:13px;
+    border: none;
+     font-size: 18px;
+   }
+
+   .form-group input:focus{
+    border: none;
+    outline: none;
+   box-shadow: 0 0 0 0.2rem #606363;
+   }
+
+   .fm-group label{
+      font-size: 20px;
+      margin-bottom: 10px;
+   }
+
+   .fm-group input{
+    font-size: 17px;
+    width: 100%;
+    padding:13px;
+    border: none;
+
+   }
+
+
+   .fm-group input:focus{
+    border: none;
+    outline: none;
+   box-shadow: 0 0 0 0.2rem #606363;
+   }
+
+   .selectinput{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    height: 53px;
+     font-size: 18px;
+   }
+
+   .selectinput:focus{
+    border: none;
+    outline: none;
+   box-shadow: 0 0 0 0.2rem #606363;
+   }
+
+
+   .fg1{
+    margin-bottom: 10px;
+   }
+   .fg2{
+    margin-bottom: 10px;
+   }
+   .fg3{
+     margin-bottom: 50px;
+   }
+   .fg3 input{
+    width: 95%;
+    background-color: #161819;
+    color:aliceblue;
+    border: none;
+    font-size: 18px;
+
+   }
+
+   .fg4{
+     margin-bottom: 5px;
+   }
+   .fg4 input{
+    width: 95%;
+    background-color: #161819;
+    color:aliceblue;
+    border: none;
+    font-size: 18px;
+
+   }
+
+
+
+
+
+
+/*  end styling the login page  */
+
+
+/* stying the main page */
+
+ .mainheader{
+   position: relative;
+   height: 350px;
+   background-image: url('../images/ca1.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center center;
+ }   
+
+ .mainheader h1{z-index: 3;}
+
+ .useri{
+    z-index: 3;
+    color: aliceblue;
+    font-size: 8em;
+  }
+
+
+/* end styling the main page  */
+
+
+
+/* styling the adminDashboard */
+  .contentDash{
+     overflow-x: hidden;
+  }
+  .sideDash{
+    position: fixed;
+    width: 100%;
+    height: 670px;
+    background-color: #2a3644;
+  }
+
+  .articleDash{
+  /*  position: absolute;*/
+  
+  background: red;
+    left:228px;
+  }
+
+  .sideblock{
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .sideblock:hover{
+    background-color: #161819 !important;
+  }
+
+  .fv{
+    text-decoration: none !important;
+     background-color: #ccc;
+  }
+
+  .text_decoration_none{text-decoration: none !important;}
+   
+  .ovv{
+    overflow:visible !important;
+  }
+  .ovh{overflow:hidden !important; }
+  .sidebar-menu{margin-top:50px !important}
+  .main-header .sidebar-toggle:before{ content: "" !important; }
+
+/* end styling the adminDashboard   */
+
+
+/*styling profile etudiant*/ 
+.articlecontainer{
+  background:#fff;
+}
+ .box{
+  padding: 20px !important;
+   background:none !important;
+   border:none !important;
+   box-shadow:none !important;
+ }
+ .box-footer{
+   background:none !important;
+   padding-left: 30px !important;
+    padding-right: 25px !important;
+ }
+
+ .box2{
+  padding: 20px !important;
+  padding-bottom: 20px !important;
+
+ }
+
+/**/
+
+
+/*styling the loader*/
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 270px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #000;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/**/
+
+
+
+
+/* styling the recours form */
+
+  .recoursinputlabel{
+    font-size:20px;
+    position: relative;
+    top: 20px;
+    margin-right: 7px;
+  }
+
+ .recoursinput{
+  background: none;
+  border: none;
+  border-bottom: 4px dotted;
+  font-size:20px;
+  padding-bottom:0rem;
+ }
+
+ .recoursinput:focus{
+   border:none;
+   border-bottom: 4px dotted;
+   box-shadow:none;
+   outline:none;
+ }
+
+/* end styling the recours form */
